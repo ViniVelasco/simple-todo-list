@@ -1,0 +1,85 @@
+body {
+	font-family: Roboto, sans-serif;
+	background: #2BC0E4; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #2BC0E4 , #EAECC6); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #2BC0E4 , #EAECC6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                
+}
+
+h1 {
+	background: #2980b9;
+	color: white;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+}
+
+li {
+	background: #fff;
+	color: #666;
+	line-height: 40px;
+	height: 40px;
+}
+
+input {
+	box-sizing: border-box; /* the width and height include the padding and border */
+	border: 3px solid rgba(0, 0, 0, 0); /* flush input */
+	color: #2980b9;
+	font-size: 18px;
+	background-color: #f7f7f7;
+	padding: 13px 13px 13px 20px;
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+span {
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0px;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:nth-child(2n){ /* Every two childs */
+	background: #f7f7f7;
+}
+
+input:focus {
+	background: #fff;
+	border: 3px solid #2980b9;
+	outline: none;
+}
+
+li:hover span { /* when hover li select the span */
+	width: 40px;
+	opacity: 1.0;
+}
+
+.fa-plus {
+	float: right;
+}
+
+
+
+#container {
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	margin: 100px auto; /* 100px bottom and top, auto left and right*/
+	width: 360px;
+	
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
